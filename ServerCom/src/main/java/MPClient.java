@@ -6,23 +6,23 @@ import java.io.IOException;
 public class MPClient {
 
     int udpC = 5200;
-    int tcpC = 5201;
-    String IPConnection = "193.40.255.16";
+    int tcpC = 51390;
+    String IPConnection = "localhost";
 
     public Client client;
     private ClientNetworkListener clientNetworkListener;
 
     public MPClient() {
         client = new Client();
+        client.start();
         clientNetworkListener = new ClientNetworkListener();
 
         clientNetworkListener.init(client);
         registerPackets();
         client.addListener(clientNetworkListener);
-        client.start();
 
         try {
-            client.connect(10000, IPConnection, tcpC, udpC);
+            client.connect(10000, IPConnection, tcpC);
         } catch (IOException e) {
             e.printStackTrace();
         }

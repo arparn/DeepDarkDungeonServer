@@ -6,17 +6,17 @@ import java.io.IOException;
 public class MPServer {
     int udpC = 5200;
     int tcpC = 5201;
-    String IPConnection = "193.40.255.16";
+    String IPConnection = "localhost";
     Server server;
     ServerNetworkListener serverNetworkListener;
 
     public MPServer() throws IOException {
         server = new Server();
-        server.bind(tcpC, udpC);
+        server.start();
+        server.bind(tcpC);
         serverNetworkListener = new ServerNetworkListener();
         server.addListener(serverNetworkListener);
         registerPackets();
-        server.start();
     }
 
     private void registerPackets(){
