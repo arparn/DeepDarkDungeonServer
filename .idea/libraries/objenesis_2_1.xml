@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="objenesis-2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/objenesis-2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/kryo-2.24.0.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/gson-2.8.6.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jsonbeans-0.7.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/kryonet-2.18.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/kryonet-2.22.0-RC1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/minlog-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

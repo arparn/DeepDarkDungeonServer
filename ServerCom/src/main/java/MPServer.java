@@ -2,6 +2,7 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryonet.Server;
 
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class MPServer {
     int udpC = 5200;
@@ -19,9 +20,11 @@ public class MPServer {
         server.start();
     }
 
-    private void registerPackets(){
+    private void registerPackets() {
         Kryo kryo = server.getKryo();
-        kryo.register(Packets.Packet01Message.class);
+        kryo.register(Packets.ConnectToGame.class);
+        kryo.register(Packets.AllowToStart.class);
+        kryo.register(LinkedList.class);
     }
 
     public static void main(String[] args) throws IOException {
