@@ -6,7 +6,7 @@ import java.io.IOException;
 public class MPClient {
 
     int udpC = 5200;
-    int tcpC = 51390;
+    int tcpC = 5291;
     String IPConnection = "localhost";
 
     public Client client;
@@ -17,15 +17,22 @@ public class MPClient {
         client.start();
         clientNetworkListener = new ClientNetworkListener();
 
-        clientNetworkListener.init(client);
+
         registerPackets();
         client.addListener(clientNetworkListener);
 
         try {
-            client.connect(10000, IPConnection, tcpC);
+            client.connect(5000, IPConnection, tcpC);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public void sendMessage(String message) {
+        Packets.Packet01Message p1cords = new Packets.Packet01Message();
+        p1cords.message = message;
+        client.sendTCP(p1cords);
     }
 
     private void registerPackets() {
@@ -34,6 +41,8 @@ public class MPClient {
     }
 
     public static void main(String[] args) {
-        new MPClient();
+
+        MPClient mpClient = new MPClient();
+        mpClient.sendMessage("HELLO");
     }
 }

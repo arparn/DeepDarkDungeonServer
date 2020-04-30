@@ -5,22 +5,22 @@ import java.io.IOException;
 
 public class MPServer {
     int udpC = 5200;
-    int tcpC = 5201;
+    int tcpC = 5291;
     String IPConnection = "localhost";
     Server server;
     ServerNetworkListener serverNetworkListener;
 
     public MPServer() throws IOException {
         server = new Server();
-        server.start();
-        server.bind(tcpC);
         serverNetworkListener = new ServerNetworkListener();
         server.addListener(serverNetworkListener);
+        server.bind(tcpC);
         registerPackets();
+        server.start();
     }
 
     private void registerPackets(){
-        Kryo kryo = new Kryo();
+        Kryo kryo = server.getKryo();
         kryo.register(Packets.Packet01Message.class);
     }
 

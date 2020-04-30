@@ -1,14 +1,9 @@
-import com.esotericsoftware.kryonet.Client;
+
 import com.esotericsoftware.kryonet.Connection;
 import com.esotericsoftware.kryonet.Listener;
 
 public class ClientNetworkListener extends Listener {
 
-    private Client client;
-
-    public void init(Client client){
-        this.client = client;
-    }
 
     public void connected(Connection c){
         System.out.println("[CLIENT] >> You have connected");
@@ -16,7 +11,7 @@ public class ClientNetworkListener extends Listener {
         //Prepare and send message to the server
         Packets.Packet01Message firstMessage = new Packets.Packet01Message();
         firstMessage.message = "Hello, Server. How are you?";
-        client.sendTCP(firstMessage);
+        c.sendTCP(firstMessage);
     }
 
     public void disconnected(Connection c){
