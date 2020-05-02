@@ -8,6 +8,16 @@ public class Packets {
     }
 
     public static class AllowToStart{
-        public String allow;
+        public int gamer;
+        public boolean allow = false;
+        public List<String> anotherGamerCharacters;
+    }
+
+    public static class GameInfo{
+        public int gamer;
+        public int characterWhoBeat;
+        public int damagedCharacter;
+        public int animation;
+        public boolean sunstrike;
     }
 }

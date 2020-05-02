@@ -26,18 +26,24 @@ public class ServerNetworkListener extends Listener {
         if (o instanceof Packets.ConnectToGame){
             if (players.size() == 0){
                 players.add(((Packets.ConnectToGame) o).characters);
-                first = true;
-                ((Packets.ConnectToGame) o).place = 1;
-                c.sendTCP(o);
+                Packets.ConnectToGame newO = new Packets.ConnectToGame();
+                newO.place = 0;
+                newO.characters = ((Packets.ConnectToGame) o).characters;
+                c.sendTCP(newO);
             } else if (players.size() == 1){
                 players.add(((Packets.ConnectToGame) o).characters);
-                second = true;
-                ((Packets.ConnectToGame) o).place = 2;
-                c.sendTCP(o);
+                Packets.ConnectToGame newO = new Packets.ConnectToGame();
+                newO.place = 1;
+                newO.characters = ((Packets.ConnectToGame) o).characters;
+                c.sendTCP(newO);
             } else c.close();
         }else if (o instanceof Packets.AllowToStart){
             if (players.size() == 2){
-                ((Packets.AllowToStart) o).allow = "yes";
+                Packets.AllowToStart newO = new Packets.AllowToStart();
+                newO.allow = true;
+                newO.anotherGamerCharacters = players.get((((Packets.AllowToStart) o).gamer + 1) % 2);
+                newO.gamer = ((Packets.AllowToStart) o).gamer;
+                c.sendTCP(newO);
             }
             c.sendTCP(o);
         }

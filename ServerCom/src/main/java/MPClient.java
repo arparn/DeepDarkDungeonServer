@@ -44,8 +44,6 @@ public class MPClient {
     }
 
     public static void main(String[] args) {
-
         MPClient gamer1 = new MPClient();
-        MPClient gamer2 = new MPClient();
     }
 }
