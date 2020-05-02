@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/ClientNetworkListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/ClientNetworkListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/ClientNetworkListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/ServerNetworkListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/ServerNetworkListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/ClientNetworkListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ClientNetworkListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/ServerNetworkListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/ClientNetworkListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/MPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MPClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/MPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MPServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Packets$Packet01Message.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/Packets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Packets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/ServerNetworkListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/ServerNetworkListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/ServerNetworkListener.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="$PROJECT_DIR$/ServerCom/src/main/java/s_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientNetworkListener">
+  <component name="RunManager" selected="Application.MPClient">
     <configuration name="ClientNetworkListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClientNetworkListener" />
       <module name="main" />
@@ -113,9 +113,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientNetworkListener" />
         <item itemvalue="Application.MPClient" />
         <item itemvalue="Application.MPServer" />
+        <item itemvalue="Application.ClientNetworkListener" />
         <item itemvalue="Application.ClientSword (2)" />
         <item itemvalue="Application.ServerSword (2)" />
       </list>
@@ -134,6 +134,7 @@
       <workItem from="1588161311719" duration="610000" />
       <workItem from="1588254006573" duration="5052000" />
       <workItem from="1588259596672" duration="7356000" />
+      <workItem from="1588445491740" duration="7426000" />
     </task>
     <task id="LOCAL-00001" summary="Ref #2">
       <created>1588264016742</created>
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588264016742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ref #3">
+      <created>1588445723776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588445723776</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -159,48 +167,53 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ref #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ref #2" />
+    <MESSAGE value="Ref #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ref #3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="814" y="472" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588259646905">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="814" y="472" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259646905" />
-    <state x="569" y="124" key="CommitChangelistDialog2" timestamp="1588445524196">
+    <state x="569" y="124" key="CommitChangelistDialog2" timestamp="1588445722942">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588445524196" />
+    <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588445722942" />
     <state x="666" y="270" key="FileChooserDialogImpl" timestamp="1588259626027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="270" key="FileChooserDialogImpl/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259626027" />
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1588265989837">
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1588454578027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588265989837" />
-    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1588265989837">
+    <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454578027" />
+    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1588454578027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588265989837" />
-    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1588265989837">
+    <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454578027" />
+    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1588454578027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588265989837" />
-    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1588265989837">
+    <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454578027" />
+    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1588454578027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588265989837" />
+    <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454578027" />
     <state x="440" y="103" key="SettingsEditor" timestamp="1588259638144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="103" key="SettingsEditor/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259638144" />
-    <state x="552" y="262" key="Vcs.Push.Dialog.v2" timestamp="1588264019743">
+    <state x="552" y="262" key="Vcs.Push.Dialog.v2" timestamp="1588445726103">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588264019743" />
+    <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588445726103" />
     <state x="611" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588264068007">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="611" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588264068007" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1588452493145">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588452493145" />
   </component>
 </project>
