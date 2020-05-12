@@ -70,7 +70,7 @@ public class MPServer {
                 }
             }
         });
-        server.bind(tcpC, udpC);
+        server.bind(tcpC);
         registerPackets();
         server.start();
     }

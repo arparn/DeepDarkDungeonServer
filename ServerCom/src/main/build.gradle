@@ -1,0 +1,32 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+version = '1.0.1'
+
+sourceSets.main.java.srcDirs = ["java/"]
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.esotericsoftware:kryonet:2.22.0-RC1'
+}
+
+apply plugin: 'idea'
+idea {
+    module {
+        testSourceDirs += sourceSets.test.java.srcDirs
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}

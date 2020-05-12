@@ -2,18 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPClient.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/MPClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/MPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MPServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ServerCom/src/main">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/ServerCom/src/main">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +77,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="serverforgame" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -43,10 +88,10 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/minlog-1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -60,21 +105,7 @@
       <recent name="$PROJECT_DIR$/ServerCom/src/main/java/s_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ClientNetworkListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClientNetworkListener" />
-      <module name="main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MPClient" />
-      <module name="main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.main [jar]">
     <configuration name="MPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MPServer" />
       <module name="main" />
@@ -89,27 +120,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Packets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Packets" />
-      <module name="main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ServerCom/src/main/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ServerCom/src/main/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="main [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ServerCom/src/main" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.MPServer" />
-      <item itemvalue="Application.MPClient" />
-      <item itemvalue="Application.ClientNetworkListener" />
-      <item itemvalue="Application.Packets" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle" />
+      <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle (1)" />
+      <item itemvalue="Gradle.main [jar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.main [jar]" />
+        <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle (1)" />
+        <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MPServer" />
-        <item itemvalue="Application.MPClient" />
-        <item itemvalue="Application.Packets" />
-        <item itemvalue="Application.ClientNetworkListener" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +208,8 @@
       <workItem from="1589225614673" duration="283000" />
       <workItem from="1589226377217" duration="3450000" />
       <workItem from="1589268924746" duration="6742000" />
-      <workItem from="1589288871375" duration="257000" />
+      <workItem from="1589288871375" duration="2572000" />
+      <workItem from="1589292779518" duration="241000" />
     </task>
     <task id="LOCAL-00001" summary="Ref #2">
       <created>1588264016742</created>
@@ -161,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589228309603</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ref #4">
+      <created>1589289293354</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589289293354</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -183,6 +268,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Ref #4" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="395" y="156" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589289843828">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="395" y="156" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.689@0.0.1280.689" timestamp="1589289843828" />
     <state x="814" y="472" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588259646905">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -191,46 +280,46 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589286787633" />
-    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589228308781">
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589289292170">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454803504" />
-    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589228308781" />
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589289292170" />
     <state x="444" y="177" key="FileChooserDialogImpl" timestamp="1589287992354">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="666" y="270" key="FileChooserDialogImpl/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259626027" />
     <state x="444" y="177" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589287992354" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589288470523">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589290830323">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589288470523">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
+    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589290830323">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589288470523">
+    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
+    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589290830323">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589288470523">
+    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589290830322" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589290830323">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1589289261990">
+    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1589290759717">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="440" y="103" key="SettingsEditor/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588498273938" />
-    <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589289261990" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589228312066">
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589290759717" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589289295186">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454805699" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589228312066" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589289295186" />
     <state x="349" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589226378239">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
