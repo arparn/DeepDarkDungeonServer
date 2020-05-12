@@ -10,9 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class MPServer {
-    int udpC = 5200;
     int tcpC = 5201;
-    String IPConnection = "193.40.255.16";
     Server server;
     private int nextPlayer = 0;
     private Map<Integer, Integer> turnMap = new HashMap<>();
@@ -51,8 +49,11 @@ public class MPServer {
                         }
                         c.sendTCP(newO);
                     } else {
-                        ((Packets.AllowToStart) o).allow = false;
-                        c.sendTCP(o);
+                        Packets.AllowToStart newO = new Packets.AllowToStart();
+                        newO.gamer = ((Packets.AllowToStart) o).gamer;
+                        newO.anotherGamerCharacters = ((Packets.AllowToStart) o).anotherGamerCharacters;
+                        newO.allow = false;
+                        c.sendTCP(newO);
                     }
                 } else if (o instanceof Packets.AllowToAttack) {
                     if (((Packets.AllowToAttack) o).gamer == turnMap.get(((Packets.AllowToAttack) o).gamer / 2)) {

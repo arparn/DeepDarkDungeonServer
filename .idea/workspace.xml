@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/MPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MPServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,32 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="main" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="main" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -209,7 +231,7 @@
       <workItem from="1589226377217" duration="3450000" />
       <workItem from="1589268924746" duration="6742000" />
       <workItem from="1589288871375" duration="2572000" />
-      <workItem from="1589292779518" duration="241000" />
+      <workItem from="1589292779518" duration="4384000" />
     </task>
     <task id="LOCAL-00001" summary="Ref #2">
       <created>1588264016742</created>
@@ -246,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589289293354</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Done">
+      <created>1589293104630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589293104630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -265,7 +294,8 @@
     <MESSAGE value="Ref #2" />
     <MESSAGE value="Ref #3" />
     <MESSAGE value="Ref #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ref #4" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="156" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589289843828">
@@ -280,46 +310,50 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589286787633" />
-    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589289292170">
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589293151237">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454803504" />
-    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589289292170" />
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589293151237" />
+    <state x="242" y="57" key="DiffContextDialog" timestamp="1589293150142">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="242" y="57" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1589293150142" />
     <state x="444" y="177" key="FileChooserDialogImpl" timestamp="1589287992354">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="666" y="270" key="FileChooserDialogImpl/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259626027" />
     <state x="444" y="177" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589287992354" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589290830323">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589297809123">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589290830323">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589297809123" />
+    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589297809123">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589290830323">
+    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589297809123" />
+    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589297809122">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589290830322" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589290830323">
+    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589297809122" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589297809123">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589290830323" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1589290759717">
+    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589297809123" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1589297776418">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="440" y="103" key="SettingsEditor/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588498273938" />
-    <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589290759717" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589289295186">
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589297776418" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589293106572">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454805699" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589289295186" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589293106572" />
     <state x="349" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589226378239">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
