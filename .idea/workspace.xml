@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPClient.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/MPClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/MPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MPServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +43,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/minlog-1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -49,23 +60,10 @@
       <recent name="$PROJECT_DIR$/ServerCom/src/main/java/s_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Packets">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ClientNetworkListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ClientNetworkListener" />
       <module name="main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientSword (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="network.ClientSword" />
-      <module name="main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="network.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,6 +82,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Packets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Packets" />
       <module name="main" />
@@ -92,19 +97,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ClientSword (2)" />
       <item itemvalue="Application.MPServer" />
       <item itemvalue="Application.MPClient" />
       <item itemvalue="Application.ClientNetworkListener" />
       <item itemvalue="Application.Packets" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Packets" />
-        <item itemvalue="Application.MPClient" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MPServer" />
+        <item itemvalue="Application.MPClient" />
+        <item itemvalue="Application.Packets" />
         <item itemvalue="Application.ClientNetworkListener" />
-        <item itemvalue="Application.ClientSword (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +129,9 @@
       <workItem from="1588445491740" duration="7465000" />
       <workItem from="1588497468159" duration="1440000" />
       <workItem from="1589225614673" duration="283000" />
-      <workItem from="1589226377217" duration="1860000" />
+      <workItem from="1589226377217" duration="3450000" />
+      <workItem from="1589268924746" duration="6742000" />
+      <workItem from="1589288871375" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="Ref #2">
       <created>1588264016742</created>
@@ -147,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588454804231</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ref #4">
+      <created>1589228309602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589228309603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -173,42 +187,50 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="814" y="472" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259646905" />
-    <state x="569" y="124" key="CommitChangelistDialog2" timestamp="1588454803504">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589286787633">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589286787633" />
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589228308781">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454803504" />
-    <state x="666" y="270" key="FileChooserDialogImpl" timestamp="1588259626027">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589228308781" />
+    <state x="444" y="177" key="FileChooserDialogImpl" timestamp="1589287992354">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="666" y="270" key="FileChooserDialogImpl/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259626027" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589228290114">
+    <state x="444" y="177" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589287992354" />
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589288470523">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589228290114" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589228290112">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
+    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589288470523">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589228290112" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589228290112">
+    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
+    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589288470523">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589228290112" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589228290112">
+    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589288470523">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589228290112" />
-    <state x="440" y="103" key="SettingsEditor" timestamp="1588498273938">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589288470523" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1589289261990">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="440" y="103" key="SettingsEditor/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588498273938" />
-    <state x="552" y="262" key="Vcs.Push.Dialog.v2" timestamp="1588454805699">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589289261990" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589228312066">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454805699" />
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589228312066" />
     <state x="349" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589226378239">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -217,10 +239,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="611" y="144" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588264068007" />
-    <state x="452" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589225617948">
+    <state x="452" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589285497693">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="452" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1589225617948" />
+    <state x="452" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1589285497693" />
+    <state x="91" y="0" key="new project wizard" timestamp="1589288027820">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.689@0.0.1280.689" timestamp="1589288027820" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1588452493145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

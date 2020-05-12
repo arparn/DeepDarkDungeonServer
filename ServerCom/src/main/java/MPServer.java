@@ -11,8 +11,8 @@ import java.util.Map;
 
 public class MPServer {
     int udpC = 5200;
-    int tcpC = 5291;
-    String IPConnection = "localhost";
+    int tcpC = 5201;
+    String IPConnection = "193.40.255.16";
     Server server;
     private int nextPlayer = 0;
     private Map<Integer, Integer> turnMap = new HashMap<>();
@@ -70,7 +70,7 @@ public class MPServer {
                 }
             }
         });
-        server.bind(tcpC);
+        server.bind(tcpC, udpC);
         registerPackets();
         server.start();
     }
@@ -82,9 +82,5 @@ public class MPServer {
         kryo.register(Packets.GameInfo.class);
         kryo.register(Packets.AllowToAttack.class);
         kryo.register(LinkedList.class);
-    }
-
-    public static void main(String[] args) throws IOException {
-        new MPServer();
     }
 }

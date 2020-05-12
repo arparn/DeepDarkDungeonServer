@@ -30,8 +30,4 @@ public class Packets {
     public static class AllowToAttack{
         public int gamer;
     }
-
-    public static void main(String[] args) {
-        MPClient gamer1 = new MPClient();
-    }
 }
