@@ -8,10 +8,14 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MPServer {
+
+    int udpC = 5200;
     int tcpC = 5201;
     Server server;
+    private int gameNr = 0;
     private int nextPlayer = 0;
     private Map<Integer, Integer> turnMap = new HashMap<>();
     private Map<Integer, Packets.GameInfo> turnInfo = new HashMap<>();
@@ -29,24 +33,28 @@ public class MPServer {
             }
 
             public void received(Connection c, Object o) {
-
                 if (o instanceof Packets.ConnectToGame) {
                     players.add(((Packets.ConnectToGame) o).characters);
                     Packets.ConnectToGame newO = new Packets.ConnectToGame();
-                    newO.place = nextPlayer;
+                    if (nextPlayer == 2) {
+                        nextPlayer = 0;
+                        gameNr++;
+                    }
+                    if (nextPlayer == 1) {
+                        turnMap.put(gameNr, ThreadLocalRandom.current().nextInt(0, 2));
+                        turnInfo.put(gameNr, new Packets.GameInfo());
+                    }
+                    newO.place.add(gameNr);
+                    newO.place.add(nextPlayer);
                     nextPlayer++;
                     newO.characters = ((Packets.ConnectToGame) o).characters;
                     c.sendTCP(newO);
                 } else if (o instanceof Packets.AllowToStart) {
-                    if (((Packets.AllowToStart) o).gamer % 2 == 1 || players.size() > (((Packets.AllowToStart) o).gamer + 1)) {
+                    if ((((Packets.AllowToStart) o).gamer.get(0) * 2 + 2) <= players.size()) {
                         Packets.AllowToStart newO = new Packets.AllowToStart();
                         newO.allow = true;
-                        newO.anotherGamerCharacters = players.get((((Packets.AllowToStart) o).gamer + 1) % 2);
+                        newO.anotherGamerCharacters = players.get(((Packets.AllowToStart) o).gamer.get(0) * 2 + ((1 + ((Packets.AllowToStart) o).gamer.get(1)) % 2));
                         newO.gamer = ((Packets.AllowToStart) o).gamer;
-                        if (!turnMap.containsKey(((Packets.AllowToStart) o).gamer / 2)) {
-                            turnMap.put(((Packets.AllowToStart) o).gamer / 2, ((Packets.AllowToStart) o).gamer);
-                            turnInfo.put(((Packets.AllowToStart) o).gamer / 2, new Packets.GameInfo());
-                        }
                         c.sendTCP(newO);
                     } else {
                         Packets.AllowToStart newO = new Packets.AllowToStart();
@@ -56,16 +64,16 @@ public class MPServer {
                         c.sendTCP(newO);
                     }
                 } else if (o instanceof Packets.AllowToAttack) {
-                    if (((Packets.AllowToAttack) o).gamer == turnMap.get(((Packets.AllowToAttack) o).gamer / 2)) {
-                        c.sendTCP(turnInfo.get(((Packets.AllowToAttack) o).gamer / 2));
+                    if (((Packets.AllowToAttack) o).gamer.get(1).equals(turnMap.get(((Packets.AllowToAttack) o).gamer.get(0)))) {
+                        c.sendTCP(turnInfo.get(((Packets.AllowToAttack) o).gamer.get(0)));
                     }
                 } else if (o instanceof Packets.GameInfo) {
-                    if (((Packets.GameInfo) o).gamer == turnMap.get(((Packets.GameInfo) o).gamer / 2)) {
-                        turnInfo.replace(((Packets.GameInfo) o).gamer / 2, (Packets.GameInfo) o);
-                        if (turnMap.get(((Packets.GameInfo) o).gamer / 2) % 2 == 0) {
-                            turnMap.replace(((Packets.GameInfo) o).gamer / 2, turnMap.get(((Packets.GameInfo) o).gamer / 2) + 1);
+                    if (((Packets.GameInfo) o).gamer.get(1).equals(turnMap.get(((Packets.GameInfo) o).gamer.get(0)))) {
+                        turnInfo.replace(((Packets.GameInfo) o).gamer.get(0), (Packets.GameInfo) o);
+                        if (turnMap.get(((Packets.GameInfo) o).gamer.get(0)) == 0) {
+                            turnMap.replace(((Packets.GameInfo) o).gamer.get(0), 1);
                         } else {
-                            turnMap.replace(((Packets.GameInfo) o).gamer / 2, turnMap.get(((Packets.GameInfo) o).gamer / 2) - 1);
+                            turnMap.replace(((Packets.GameInfo) o).gamer.get(0), 0);
                         }
                     }
                 }
@@ -78,10 +86,10 @@ public class MPServer {
 
     private void registerPackets() {
         Kryo kryo = server.getKryo();
+        kryo.register(LinkedList.class);
         kryo.register(Packets.ConnectToGame.class);
         kryo.register(Packets.AllowToStart.class);
         kryo.register(Packets.GameInfo.class);
         kryo.register(Packets.AllowToAttack.class);
-        kryo.register(LinkedList.class);
     }
 }
