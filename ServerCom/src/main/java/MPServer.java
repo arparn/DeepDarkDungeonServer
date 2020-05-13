@@ -4,10 +4,7 @@ import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class MPServer {
@@ -20,6 +17,7 @@ public class MPServer {
     private Map<Integer, Integer> turnMap = new HashMap<>();
     private Map<Integer, Packets.GameInfo> turnInfo = new HashMap<>();
     private List<List<String>> players = new LinkedList<>();
+    private List<Connection> connections = new LinkedList<>();
 
     public MPServer() throws IOException {
         server = new Server();

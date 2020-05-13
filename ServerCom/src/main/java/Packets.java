@@ -24,6 +24,7 @@ public class Packets {
         public int characterWhoBeat;
         public int damagedCharacter;
         public boolean animation;
+        public boolean gameOver;
     }
 
     // этот запрос посылается когда мы не знаем можем ли мы ходить, ждем пока не получим GameInfo

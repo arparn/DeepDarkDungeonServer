@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dc8f8d0-76ff-4c4a-a2e7-00ad83e5b1a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/objenesis_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/objenesis_2_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/MPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServerCom/src/main/java/Packets.java" afterDir="false" />
     </list>
@@ -200,10 +197,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle" />
       <item itemvalue="Gradle.C:/Users/ilja/IdeaProjects/serverforgame/ServerCom/src/main/build.gradle (1)" />
       <item itemvalue="Gradle.main [jar]" />
-      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -235,7 +232,9 @@
       <workItem from="1589268924746" duration="6742000" />
       <workItem from="1589288871375" duration="2572000" />
       <workItem from="1589292779518" duration="4734000" />
-      <workItem from="1589356548756" duration="13068000" />
+      <workItem from="1589356548756" duration="16051000" />
+      <workItem from="1589390450863" duration="1115000" />
+      <workItem from="1589398310216" duration="5600000" />
     </task>
     <task id="LOCAL-00001" summary="Ref #2">
       <created>1588264016742</created>
@@ -286,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589298103892</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ref #6">
+      <created>1589373626363</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589373626363</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -306,7 +312,8 @@
     <MESSAGE value="Ref #3" />
     <MESSAGE value="Ref #4" />
     <MESSAGE value="Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+    <MESSAGE value="Ref #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ref #6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="156" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589289843828">
@@ -321,11 +328,11 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="371" y="96" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589286787633" />
-    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589298103224">
+    <state x="379" y="0" key="CommitChangelistDialog2" timestamp="1589373625575">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="569" y="124" key="CommitChangelistDialog2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454803504" />
-    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589298103224" />
+    <state x="379" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589373625575" />
     <state x="242" y="57" key="DiffContextDialog" timestamp="1589293150142">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -335,40 +342,40 @@
     </state>
     <state x="666" y="270" key="FileChooserDialogImpl/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588259626027" />
     <state x="444" y="177" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589287992354" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589373162327">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589405002968">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.bottom/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589373162327" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589373162327">
+    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589405002968" />
+    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589405002967">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.center/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589373162327" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589373162327">
+    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589405002967" />
+    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589405002967">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.left/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589373162327" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589373162327">
+    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589405002967" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589405002968">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1877" height="237" key="GridCell.Tab.0.right/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454832155" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589373162327" />
+    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589405002968" />
     <state x="242" y="0" key="SettingsEditor" timestamp="1589360309768">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="440" y="103" key="SettingsEditor/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588498273938" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589360309768" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589298105657">
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2" timestamp="1589373628026">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="552" y="262" key="Vcs.Push.Dialog.v2/-1920.0.1280.700/0.0.1920.1050@0.0.1920.1050" timestamp="1588454805699" />
-    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589298105657" />
-    <state x="349" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589356613023">
+    <state x="368" y="164" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589373628026" />
+    <state x="349" y="174" key="com.intellij.ide.util.TipDialog" timestamp="1589398338761">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="349" y="174" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589356613023" />
+    <state x="349" y="174" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589398338761" />
     <state x="407" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589358729175">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
